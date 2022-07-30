@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_design"
+
+    tools:context=".activities.RegisterFormActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:id="@+id/lin"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:layout_margin="20dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Register"
+                            android:textSize="25dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="#5037D6"
+                            android:layout_marginBottom="40dp"
+                            />
+
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/register_form_nameId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_account_circle_black_24dp"
+                            android:hint="Name"
+                            android:drawablePadding="5dp"
+                            android:inputType="textEmailAddress"
+                            android:padding="10dp"
+
+
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/register_form_emailId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_email_blue_24dp"
+                            android:hint="Email"
+                            android:drawablePadding="5dp"
+                            android:inputType="textEmailAddress"
+                            android:padding="10dp"
+
+
+                            />
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/register_form_UniversityId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_school_blue_24dp"
+                            android:hint="University Name"
+                            android:drawablePadding="5dp"
+                            android:inputType="textEmailAddress"
+                            android:padding="10dp"
+
+
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/register_form_contactNumberId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_phone_black_24dp"
+                            android:hint="Contact number"
+                            android:drawablePadding="5dp"
+                            android:inputType="phone"
+                            android:padding="10dp"
+
+
+                            />
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/register_form_transactionId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/transaction_icon2"
+                            android:hint="Bkash Transaction Id"
+                            android:inputType="textPersonName"
+                            android:drawablePadding="5dp"
+                            android:padding="10dp"
+                            android:layout_marginBottom="15dp"
+
+
+                            />
+
+
+
+                        <Button
+                            android:id="@+id/register_form_registerBtnId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Regisiter "
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginTop="20dp"
+                            android:textStyle="bold"
+                            android:textAllCaps="false"
+                            android:background="@drawable/bg_circle_shape"
+                            android:padding="18dp"
+
+                            />
+
+
+                        <TextView
+                            android:id="@+id/register_form_alreadyRegisterId"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Already registered?"
+                            android:gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:textColor="#5037D6"
+                            android:textStyle="bold"
+                            android:textSize="10dp">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

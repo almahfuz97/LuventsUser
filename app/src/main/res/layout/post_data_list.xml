@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:elevation="8dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/postCircleViewListId"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width=".5dp"
+                    android:src="@drawable/proico"
+                    android:padding="5sp"
+                    >
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5sp"
+                    >
+
+
+
+                <TextView
+                    android:id="@+id/post_giver_name_Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abdullah Al Mahfuz"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    >
+
+                </TextView>
+
+                    <TextView
+                        android:id="@+id/post_time_ago_list_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5min ago"
+                        android:textSize="12sp"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <com.borjabravo.readmoretextview.ReadMoreTextView
+                    android:id="@+id/post_caption_list_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:padding="5sp"
+                    app:trimLines="10"
+                    android:cursorVisible="false"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:textIsSelectable="true"
+                    android:focusable="false"
+
+                    >
+
+                </com.borjabravo.readmoretextview.ReadMoreTextView>
+
+                <ImageView
+                    android:id="@+id/post_image_list_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+
+                    >
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:weightSum="2"
+                android:layout_marginTop="5sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 likes"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/post_all_likes_list_id"
+
+                    >
+
+                </TextView>
+
+                 <TextView
+                     android:id="@+id/post_all_comments_list_id"
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:text="5 comments"
+                     android:layout_weight="1"
+                     android:gravity="right"
+                     android:layout_marginRight="20sp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#A0A091"
+                android:layout_marginBottom="5dp"
+
+                >
+
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/post_like_list_click_tv_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@mipmap/white_like"
+                        android:drawablePadding="5sp"
+                        android:text="Like"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/post_comment_list_click_tv_id"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@mipmap/white_comment"
+                        android:drawablePadding="5sp"
+                        android:text="Comment"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

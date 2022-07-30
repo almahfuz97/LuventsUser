@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Luvents</string>
+
+    <string name="resend_email"><u>Resend verification email ?</u>.</string>
+    <string name="forgot_pass"> We will mail you a password reset link </string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upload">Upload</string>
+    <string name="description">Description</string>
+    <string name="choose_a_photo">choose a photo</string>
+    <string name="type_a_message">Type a Comment..</string>
+    <string name="login_now">Login Now</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">sign up</string>
+    <string name="username">username</string>
+    <string name="already_have_an_account">Already Have an account??</string>
+    <string name="university_id">University Id</string>
+    <string name="create_a_account">Create a Account</string>
+    <string name="id">Id :</string>
+    <string name="total_votes">Total Votes :</string>
+    <string name="total_idea_submit">Total Idea Submit :</string>
+    <string name="your_bookmark_list">Your Bookmark List</string>
+    <string name="your_ideas">Your Ideas</string>
+
+
+    <string-array name="sortedBy">
+        <item>All</item>
+        <item>Recent</item>
+        <item>LUCC</item>
+        <item>LUPS</item>
+        <item>LUCuC</item>
+        <item>LUSSC</item>
+        <item>LUDC</item>
+        <item>Orpheus</item>
+        <item>BC</item>
+        <item>Going</item>
+
+    </string-array>
+
+    <string-array name="statusSorted">
+        <item>All</item>
+        <item>Completed</item>
+        <item>Pending</item>
+        <item>Rejected</item>
+
+
+    </string-array>
+
+
+</resources>

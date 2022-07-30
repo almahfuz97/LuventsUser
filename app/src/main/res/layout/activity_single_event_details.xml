@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_design"
+    app:layout_scrollFlags="exitUntilCollapsed|scroll|snap"
+
+    tools:context=".activities.SingleEventDetails"
+    >
+
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+        android:background="@color/white"
+        android:nestedScrollingEnabled="true"
+
+
+
+        >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll"
+            android:background="@color/white"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <include layout="@layout/custom_toolbar"
+
+                    >
+
+                </include>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@drawable/ic_image_darkblue_24dp"
+                        android:id="@+id/singleImageViewId"
+                        android:scaleType="centerCrop"
+
+                        >
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10sp"
+                    android:elevation="50dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="3"
+                        android:padding="8dp"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/singleEventNameId"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="8sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="5sp"
+
+                            android:text="LU CSE CARNVAL 2019"
+                            android:layout_weight="2"
+
+                            />
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/singleHostedById"
+
+                            android:layout_marginStart="8sp"
+                            android:text="Hosted by Leading University Computer Club"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                            />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Friday, January 31,2020 at 8 PM - 11 PM"
+                        android:id="@+id/singleDateTimeId"
+                        android:padding="8dp"
+                        android:drawableStart="@drawable/ic_access_time_darkblue_24dp"
+                        android:drawablePadding="8dp"
+                        android:layout_margin="5sp"
+                        android:textColor="@color/black"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leading University"
+                        android:id="@+id/singleAddressId"
+                        android:padding="8dp"
+                        android:drawableStart="@drawable/ic_location_on_darkblue_24dp"
+                        android:drawablePadding="8dp"
+                        android:layout_margin="5sp"
+                        android:textColor="@color/black"
+
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabLayoutId"
+            app:tabTextColor="@color/black"
+            app:tabSelectedTextColor="@color/colorPrimaryDark"
+            android:elevation="8dp"
+            android:padding="2dp"
+            app:tabIndicatorColor="@color/white"
+
+            >
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutId"
+                android:text="About"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/discussionId"
+                android:text="Discussion"
+                />
+
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/singleEventviewPagerId"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+
+        >
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

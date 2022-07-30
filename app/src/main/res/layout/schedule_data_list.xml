@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hackathon"
+        android:padding="20sp"
+        android:textSize="25dp"
+        android:background="@color/white"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/schedule_list_textviewID"
+        android:drawableEnd="@drawable/ic_arrow_forward_blue_24dp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+
+
+</androidx.cardview.widget.CardView>

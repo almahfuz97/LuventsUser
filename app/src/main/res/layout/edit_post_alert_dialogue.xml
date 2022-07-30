@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="3dp"
+    android:elevation="8dp"
+    android:padding="2dp"
+    app:cardBackgroundColor="@color/black"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#11356B"
+        android:padding="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Post"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            >
+
+        </TextView>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+        style="@style/Divider"
+            >
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/edit_post_alert_dialogue_editId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_create_darkblue_24dp"
+            android:drawablePadding="10dp"
+            android:text="Edit"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/yellow_inactive"
+            android:layout_marginTop="15dp"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/edit_post_alert_dialogue_deleteId"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_delete_red_24dp"
+            android:drawablePadding="10dp"
+            android:text="Delete"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#7E0D28"
+            android:layout_marginTop="15dp"
+            >
+
+        </TextView>
+         <TextView
+             android:id="@+id/edit_post_alert_dialogue_cancelId"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_cancel_green_24dp"
+            android:drawablePadding="10dp"
+            android:text="Cancel"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#37F403"
+            android:layout_marginTop="15dp"
+            >
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

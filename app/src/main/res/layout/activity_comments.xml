@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activities.CommentsActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="2dp"
+
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        android:id="@+id/comment_toolbar_id"
+        app:titleTextColor="@color/black"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:id="@+id/comment_back_keyId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_arrow_back_white_24dp"
+                android:layout_gravity="center"
+                android:drawablePadding="8dp"
+                >
+
+            </TextView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/comments_toolbar_profileId"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width=".5dp"
+                android:src="@drawable/proico"
+                android:layout_marginRight="5dp"
+
+                >
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical"
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abdullah Al Mahfuz"
+                    android:textColor="@color/white"
+                    android:id="@+id/comment_toolbar_userNameId"
+
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 mins ago"
+                    android:textColor="@color/white"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:id="@+id/comment_toolbar_TimeagoId"
+
+                    >
+
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp"
+                >
+
+                <com.borjabravo.readmoretextview.ReadMoreTextView
+                    android:id="@+id/comment_captionId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:padding="10sp"
+                    app:trimLines="10"
+                    android:textColor="@color/black"
+                    android:cursorVisible="false"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginBottom="8sp"
+                    android:textIsSelectable="false"
+                    android:focusable="false"
+
+                    >
+
+                </com.borjabravo.readmoretextview.ReadMoreTextView>
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/comment_imageView"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    >
+                </ImageView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:weightSum="2"
+                android:layout_marginTop="15sp"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 likes"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/comment_total_likes_id"
+
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/comment_total_cId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 comments"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_marginRight="20sp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                style="@style/Divider"
+                android:layout_marginBottom="5dp"
+                >
+
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/comment_click_likeId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@mipmap/white_like"
+                        android:drawablePadding="5sp"
+                        android:text="Like"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/comment_click_commentId"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@mipmap/white_comment"
+                        android:drawablePadding="5sp"
+                        android:text="Comment"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                style="@style/Divider"
+                >
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/comment_side_comment_circleview_Id"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:civ_border_width=".5dp"
+                    app:civ_border_color="@color/black"
+                    android:src="@drawable/proico"
+                    android:layout_marginRight="10dp"
+                    >
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    >
+
+
+
+                    <EditText
+                        android:id="@+id/comment_comment_ET_ID"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.5"
+                        android:background="@drawable/bg_circle_shape"
+                        android:hint="Write a comment"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:layout_marginRight="10dp"
+
+                        >
+
+                    </EditText>
+                    <TextView
+                        android:id="@+id/comment_sendId"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:drawableStart="@mipmap/send"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                    </TextView>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment_progressbarId"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                >
+
+            </ProgressBar>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical"
+                >
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/comment_recyclerViewId"
+                    android:layout_marginBottom="15dp"
+
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

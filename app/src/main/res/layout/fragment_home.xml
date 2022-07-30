@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_design"
+    tools:context=".Fragments.HomeFragment">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeRefreshId"
+        >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/layou_search"
+
+                >
+
+
+                <EditText
+                    android:id="@+id/HomesearchId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_circle_shape"
+                    android:drawableStart="@drawable/ic_search_blue_gray_24dp"
+                    android:padding="10dp"
+                    android:hint="search here"
+                    >
+
+                </EditText>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_filter"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/layou_search"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sort By "
+                    android:textSize="15sp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/bg_circle_shape"
+                    android:textColor="@color/black"
+                    >
+
+                </TextView>
+                <Spinner
+                    android:id="@+id/sorted_spinner_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:entries="@array/sortedBy"
+                    android:padding="10dp"
+                    >
+                </Spinner>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/eventsrecyclerviewid"
+                android:focusable="true"
+                android:layout_below="@+id/layout_filter"
+
+                android:layout_marginBottom="70dp"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Textview"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+                android:layout_below="@+id/layout_filter"
+                android:gravity="center"
+                android:id="@+id/homefrag_notItem"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                >
+
+            </TextView>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/recyprogragbarId"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+</RelativeLayout>
